@@ -2,6 +2,12 @@
 
 ![main_figure](main_figure.png)
 
+## Publication
+
+* NeurIPS 2024 Workshop NeurReps: https://openreview.net/forum?id=tN0n5BuLEI
+
+* Preprint: https://arxiv.org/abs/2409.19117
+
 ## Overview
 This repository contains the implementation of **HOPE-WavePE (High-Order Permutation-Equivariant Autoencoder for Wavelet Positional Encoding)**, a novel graph representation learning method. HOPE-WavePE extends **Wavelet Positional Encoding (WavePE)** by utilizing a multi-resolution **autoencoder** to capture both local and global structures in graphs.
 
