@@ -1,4 +1,4 @@
-# WavePE: High-Order Wavelet-based Graph Positional Encoding
+# Range-aware Graph Positional Encoding via High-order Pretraining: Theory and Practice
 
 ## Overview
 This repository contains the implementation of **HOPE-WavePE (High-Order Permutation-Equivariant Autoencoder for Wavelet Positional Encoding)**, a novel graph representation learning method. HOPE-WavePE extends **Wavelet Positional Encoding (WavePE)** by utilizing a multi-resolution **autoencoder** to capture both local and global structures in graphs.
@@ -21,8 +21,8 @@ Ensure you have Python 3.8+ installed.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-repo/wavepe.git
-   cd wavepe-master
+   git clone https://github.com/HySonLab/WaveletPE.git
+   cd WaveletPE
    ```
 
 2. Create a virtual environment (optional but recommended):
@@ -85,12 +85,13 @@ wavepe-master/
 ## Citation
 If you use this work in your research, please cite the corresponding paper:
 ```bibtex
-@article{hy2024hopewavepe,
-  author    = {Nguyen, Viet Anh and Ngo, Nhat Khang and Hy, Truong-Son},
-  title     = {Range-aware Graph Positional Encoding via High-Order Pretraining: Theory and Practice},
-  journal   = {Preprint},
-  year      = {2024},
-  note      = {Under Review}
+@inproceedings{
+nguyen2025rangeaware,
+title={Range-aware Positional Encoding via High-order Pretraining: Theory and Practice},
+author={Viet Anh Nguyen and Nhat Khang Ngo and Hy Truong Son},
+booktitle={NeurIPS 2024 Workshop on Symmetry and Geometry in Neural Representations},
+year={2025},
+url={https://openreview.net/forum?id=tN0n5BuLEI}
 }
 ```
 
