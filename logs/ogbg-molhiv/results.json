@@ -1,0 +1,164 @@
+{
+    "1444": {
+        "valid_score": 0.5597442680776015,
+        "test_score": 0.537725718920798,
+        "best_train_loss": 0.7924253804825048
+    },
+    "2478": {
+        "valid_score": 0.7862501224769743,
+        "test_score": 0.750798586299465,
+        "best_train_loss": 0.07131236334302064
+    },
+    "6241": {
+        "model_type": "GT",
+        "valid_score": 0.8203783313737016,
+        "test_score": 0.7500241410610479,
+        "best_train_loss": 0.07559312349968597,
+        "trainable_params": 556523,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "7791": {
+        "model_type": "GT",
+        "local_gnn_type": "CustomGatedGCN",
+        "valid_score": 0.8303081520674114,
+        "test_score": 0.742577106548987,
+        "best_train_loss": 0.024535663339756444,
+        "trainable_params": 556523,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "8000": {
+        "model_type": "GT",
+        "local_gnn_type": "CustomGatedGCN",
+        "valid_score": 0.7866451107191847,
+        "test_score": 0.768676490469109,
+        "best_train_loss": 0.11030193699011397,
+        "trainable_params": 560003,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "9485": {
+        "model_type": "GT",
+        "local_gnn_type": "CustomGatedGCN",
+        "valid_score": 0.8215051195375269,
+        "test_score": 0.7750439367311072,
+        "best_train_loss": 0.0798700457058213,
+        "trainable_params": 560003,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "8628": {
+        "model_type": "gnn",
+        "local_gnn_type": "gated_gcn",
+        "valid_score": 0.7947500244953948,
+        "test_score": 0.7050580351107592,
+        "best_train_loss": 0.08705953994473695,
+        "trainable_params": 316261,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "5037": {
+        "model_type": "gnn",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7834453997648442,
+        "test_score": 0.7434500473164797,
+        "best_train_loss": 0.12363929974024992,
+        "trainable_params": 837806,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "9112": {
+        "model_type": "gnn",
+        "local_gnn_type": "gine",
+        "valid_score": 0.8153537135018615,
+        "test_score": 0.7377315127754496,
+        "best_train_loss": 0.09094416677058675,
+        "trainable_params": 602966,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "9641": {
+        "model_type": "gnn",
+        "local_gnn_type": "gated_gcn",
+        "valid_score": 0.8193219674701155,
+        "test_score": 0.7515305432704378,
+        "best_train_loss": 0.060275323883055454,
+        "trainable_params": 385766,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "2695": {
+        "model_type": "gnn",
+        "local_gnn_type": "gated_gcn",
+        "valid_score": 0.7935191309033901,
+        "test_score": 0.7248826744433072,
+        "best_train_loss": 0.07949588911092734,
+        "trainable_params": 385766,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "5213": {
+        "model_type": "gnn_vn",
+        "local_gnn_type": "gated_gcn",
+        "valid_score": 0.8251181902802273,
+        "test_score": 0.750383360049441,
+        "best_train_loss": 0.10772384279779937,
+        "trainable_params": 356364,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "1548": {
+        "model_type": "gnn_vn",
+        "local_gnn_type": "gated_gcn",
+        "valid_score": 0.8321942974720753,
+        "test_score": 0.7467042623457386,
+        "best_train_loss": 0.10431015036447856,
+        "trainable_params": 414804,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "4816": {
+        "model_type": "GT",
+        "local_gnn_type": "CustomGatedGCN",
+        "valid_score": 0.8428926611796983,
+        "test_score": 0.7655381525328799,
+        "best_train_loss": 0.08062463192920716,
+        "trainable_params": 557043,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "3240": {
+        "model_type": "GT",
+        "local_gnn_type": "GINE",
+        "valid_score": 0.8173898932000784,
+        "test_score": 0.7435717182641611,
+        "best_train_loss": 0.04812338923192269,
+        "trainable_params": 680683,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "11215": {
+        "model_type": "GT",
+        "local_gnn_type": "CustomGatedGCN",
+        "valid_score": 0.8146617185969037,
+        "test_score": 0.7470190617818033,
+        "best_train_loss": 0.020650623486531038,
+        "trainable_params": 556523,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "1124": {
+        "model_type": "gnn_vn",
+        "local_gnn_type": "gated_gcn",
+        "valid_score": 0.8258867332941406,
+        "test_score": 0.7752621719229803,
+        "best_train_loss": 0.10947596017276488,
+        "trainable_params": 420112,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "2317": {
+        "model_type": "GT",
+        "local_gnn_type": "CustomGatedGCN",
+        "valid_score": 0.8249497844405251,
+        "test_score": 0.7781919310917554,
+        "best_train_loss": 0.08269198328137832,
+        "trainable_params": 562351,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "10251": {
+        "model_type": "GT",
+        "local_gnn_type": "CustomGatedGCN",
+        "valid_score": 0.8281954242602391,
+        "test_score": 0.7569226906661002,
+        "best_train_loss": 0.07200110814878934,
+        "trainable_params": 562351,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    }
+}

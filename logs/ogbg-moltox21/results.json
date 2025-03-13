@@ -1,0 +1,263 @@
+{
+    "1387": {
+        "model_type": "gnn",
+        "local_gnn_type": "gine",
+        "valid_score": 0.634850452389876,
+        "test_score": 0.6144834659761146,
+        "best_train_loss": 0.23891364705973658,
+        "trainable_params": 4589937,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "9885": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.8036403014096728,
+        "test_score": 0.7417906543910903,
+        "best_train_loss": 0.13625948393710272,
+        "trainable_params": 959232,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "3572": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.8017897470143196,
+        "test_score": 0.7391423533268249,
+        "best_train_loss": 0.1363906717429825,
+        "trainable_params": 959232,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "6989": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7989127865014408,
+        "test_score": 0.7377557776584281,
+        "best_train_loss": 0.14138721083772593,
+        "trainable_params": 1860732,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "11031": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.8008540665539069,
+        "test_score": 0.7478836182857133,
+        "best_train_loss": 0.14182325634310833,
+        "trainable_params": 1876337,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "3704": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7994036640151373,
+        "test_score": 0.7442652339193025,
+        "best_train_loss": 0.1181599343074236,
+        "trainable_params": 1876337,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "2162": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.8054072496460103,
+        "test_score": 0.7419484687052015,
+        "best_train_loss": 0.10752750525909974,
+        "trainable_params": 1876337,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "10152": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.8009327526599535,
+        "test_score": 0.7559889399191708,
+        "best_train_loss": 0.11978732161747237,
+        "trainable_params": 1876337,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "3879": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7984842468890437,
+        "test_score": 0.7454014240111796,
+        "best_train_loss": 0.09385270128647487,
+        "trainable_params": 1876337,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "3979": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.8033236623013337,
+        "test_score": 0.7368543389585587,
+        "best_train_loss": 0.12793428590699632,
+        "trainable_params": 1876337,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "3691": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.798529116349886,
+        "test_score": 0.7466245230082942,
+        "best_train_loss": 0.1183130576217007,
+        "trainable_params": 1876337,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "10160": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7986088164417775,
+        "test_score": 0.743081125006905,
+        "best_train_loss": 0.11634821293454517,
+        "trainable_params": 1876337,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "11607": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.8028012069117403,
+        "test_score": 0.7526458521975012,
+        "best_train_loss": 0.11175446334089204,
+        "trainable_params": 1876337,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "28": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7941219834264208,
+        "test_score": 0.7348216214157719,
+        "best_train_loss": 0.16442242934633794,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 14
+    },
+    "11": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.8019087768598964,
+        "test_score": 0.7427883125818834,
+        "best_train_loss": 0.14658728643471558,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 15
+    },
+    "22": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7972867972903205,
+        "test_score": 0.7519081930521402,
+        "best_train_loss": 0.1523551909707363,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 16
+    },
+    "20": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7953942451455327,
+        "test_score": 0.7521636539187604,
+        "best_train_loss": 0.14812088416149485,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 17
+    },
+    "26": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7941321087139,
+        "test_score": 0.7453254766952663,
+        "best_train_loss": 0.15301562961795168,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 18
+    },
+    "38": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7958567534191788,
+        "test_score": 0.7501158688131486,
+        "best_train_loss": 0.16231653767984033,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 19
+    },
+    "40": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7973061021594224,
+        "test_score": 0.7515110470671164,
+        "best_train_loss": 0.1495696738800022,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 20
+    },
+    "19": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7882011540307468,
+        "test_score": 0.7416030514341675,
+        "best_train_loss": 0.16121319712806936,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 21
+    },
+    "2": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7898684812670201,
+        "test_score": 0.738171750401639,
+        "best_train_loss": 0.15022875301987124,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 22
+    },
+    "4": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7957307912369909,
+        "test_score": 0.7501287466001784,
+        "best_train_loss": 0.15370789130300397,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 23
+    },
+    "44": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.791467420470838,
+        "test_score": 0.7417427889832413,
+        "best_train_loss": 0.1453946601994345,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 24
+    },
+    "45": {
+        "model_type": "gine_transfer",
+        "local_gnn_type": "gine",
+        "valid_score": 0.7970084177599036,
+        "test_score": 0.7617312104478108,
+        "best_train_loss": 0.15539101845231548,
+        "trainable_params": 2240237,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt",
+        "use_residual": true,
+        "warmup_step": 5,
+        "idx": 25
+    }
+}

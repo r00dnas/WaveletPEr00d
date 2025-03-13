@@ -1,0 +1,101 @@
+{
+    "10811": {
+        "model_type": "Transformer",
+        "valid_score": 0.6368857336701998,
+        "test_score": 0.6150106147827913,
+        "best_train_loss": 0.09786001400528535,
+        "trainable_params": 436170
+    },
+    "11711": {
+        "model_type": "gnn",
+        "valid_score": 0.7062093158010866,
+        "test_score": 0.6856340223952686,
+        "best_train_loss": 0.05381456901723872,
+        "trainable_params": 317134
+    },
+    "7285": {
+        "model_type": "gnn",
+        "valid_score": 0.7038324792423284,
+        "test_score": 0.69088302498348,
+        "best_train_loss": 0.0747775688512525,
+        "trainable_params": 317134
+    },
+    "11516": {
+        "model_type": "gnn",
+        "valid_score": 0.7134166313012158,
+        "test_score": 0.6906569743390751,
+        "best_train_loss": 0.0568470619718252,
+        "trainable_params": 343314
+    },
+    "18": {
+        "model_type": "gnn",
+        "valid_score": 0.7081604373023042,
+        "test_score": 0.6953365801985859,
+        "best_train_loss": 0.06306102150614497,
+        "trainable_params": 317134
+    },
+    "11775": {
+        "model_type": "gnn",
+        "valid_score": 0.7058250896042267,
+        "test_score": 0.681323028406498,
+        "best_train_loss": 0.07814566441518254,
+        "trainable_params": 317134
+    },
+    "10966": {
+        "model_type": "gnn",
+        "valid_score": 0.7049028512288746,
+        "test_score": 0.6922282490109376,
+        "best_train_loss": 0.08116438939097087,
+        "trainable_params": 317134,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "9438": {
+        "model_type": "gnn",
+        "valid_score": 0.7000335520754271,
+        "test_score": 0.7024701419546187,
+        "best_train_loss": 0.058610873230217596,
+        "trainable_params": 317134,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "4426": {
+        "model_type": "gnn",
+        "valid_score": 0.715632919059051,
+        "test_score": 0.6983535858034183,
+        "best_train_loss": 0.054724693226389974,
+        "trainable_params": 317134,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "688": {
+        "model_type": "gnn",
+        "valid_score": 0.7069040467446304,
+        "test_score": 0.6968335830700454,
+        "best_train_loss": 0.05338665207349957,
+        "trainable_params": 317134,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "5332": {
+        "model_type": "GT",
+        "valid_score": 0.6562778835629784,
+        "test_score": 0.6402854252006837,
+        "best_train_loss": 0.13811937513395733,
+        "trainable_params": 503758,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "3756": {
+        "model_type": "GT",
+        "valid_score": 0.6577910077158086,
+        "test_score": 0.642951215829322,
+        "best_train_loss": 0.14480258619528757,
+        "trainable_params": 503758,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    },
+    "6492": {
+        "model_type": "GT",
+        "local_gnn_type": "CustomGatedGCN",
+        "valid_score": 0.6705811072288219,
+        "test_score": 0.668194461029832,
+        "best_train_loss": 0.043850673640990205,
+        "trainable_params": 507238,
+        "pretrain_path": "/cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt"
+    }
+}

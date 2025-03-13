@@ -1,0 +1,26 @@
+dataset_name: Peptides-func
+model_type: GT
+use_full_graph: False
+atom_dim: 76
+bond_dim: 56
+ckpt_pos_encoder_path: /cm/shared/khangnn4/WavePE/ckpts/PCBA_2/PCBA_epoch=49_train_loss=0.087_val_loss=0.090_val_best_loss=0.090.ckpt
+num_layer: 4
+num_heads: 4
+device: cuda:2
+out_dim: 1
+pos_dim: 20
+num_epoch: 200
+batch_size: 32
+mpnn_type: gated
+lr: 5e-4 ### func 
+#lr: 5e-3
+dropout: 0.0
+graph_pooling: mean
+attn_dropout: 0.5
+weight_decay: 1e-4 ### for peptides struct
+local_gnn_type: CustomGatedGCN
+global_model_type: Transformer
+batch_norm: True
+layer_norm: False
+scheduler: consine_with_warmup
+clip_grad_norm: True
