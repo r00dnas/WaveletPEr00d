@@ -1,5 +1,7 @@
 # Range-aware Graph Positional Encoding via High-order Pretraining: Theory and Practice
 
+![main_figure](main_figure.png)
+
 ## Overview
 This repository contains the implementation of **HOPE-WavePE (High-Order Permutation-Equivariant Autoencoder for Wavelet Positional Encoding)**, a novel graph representation learning method. HOPE-WavePE extends **Wavelet Positional Encoding (WavePE)** by utilizing a multi-resolution **autoencoder** to capture both local and global structures in graphs.
 
