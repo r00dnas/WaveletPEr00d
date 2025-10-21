@@ -1,0 +1,49 @@
+import torch
+from torch.utils.data import Dataset
+from torch_geometric.data import Data
+from torch_geometric.loader import DataLoader as GeoLoader
+
+# optional deps
+try:
+    import torch_sparse  # noqa
+except Exception as e:
+    torch_sparse = None
+    print("torch_sparse disabled:", e)
+
+try:
+    from tdc.generation import MolGen
+    from tdc.chem_utils import MolConvert
+except Exception as e:
+    print("TDC disabled:", e)
+    class MolConvert:
+        def smi2mol(self, x): return x
+        def mol2smi(self, x): return x
+        def smi2img(self, *a, **k): return None
+    class MolGen:
+        def __init__(self,*a,**k): pass
+        def get_data(self,*a,**k): return []
+
+class GraphDataset(Dataset):
+    def __init__(self, n=32, nodes=5, feat=8):
+        self.n, self.nodes, self.feat = n, nodes, feat
+    def __len__(self): return self.n
+    def __getitem__(self, idx):
+        x = torch.randn(self.nodes, self.feat)
+        edge_index = torch.tensor([[0,1],[1,2],[2,3],[3,4],[4,0]], dtype=torch.long).t().contiguous()
+        return Data(x=x, edge_index=edge_index)
+
+# Lightning DataModule that returns PyG batches
+try:
+    import lightning as L
+except Exception:
+    L = None
+
+class Lightning_Dataset(L.LightningDataModule if L else object):
+    def __init__(self, *args, **kwargs):
+        if L: super().__init__()
+    def train_dataloader(self):
+        return GeoLoader(GraphDataset(), batch_size=4, shuffle=True)
+    def val_dataloader(self):
+        return GeoLoader(GraphDataset(), batch_size=4)
+    def test_dataloader(self):
+        return GeoLoader(GraphDataset(), batch_size=4)

@@ -1,10 +1,9 @@
 import torch
 import torch.nn as nn
-from utils.commons import load_positional_encoder
-import torch_geometric.utils as pyg_utils
-import torch_sparse
-from torch_sparse import SparseTensor
-from torch_scatter import scatter
+import torch.nn.functional as F
+
+from compat import torch_sparse
+
 
 def full_edge_index(edge_index, batch=None):
     """

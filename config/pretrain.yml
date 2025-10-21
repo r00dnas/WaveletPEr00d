@@ -1,3 +1,14 @@
+# config/pretrain.yml  (add or override these keys)
+data:
+  root: 'C:\Users\r00dn\Wavelet\WaveletPEr00d\Data'   # uses Data\processed\data.pt
+  dataset: PTDataset                                  # your custom loader class
+  batch_size: 1
+  num_workers: 0
+
+model:
+  in_dim: 64
+  edge_in_dim: 130
+
 data_name: PCBA
 seed: 0
 

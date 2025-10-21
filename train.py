@@ -4,4 +4,4 @@ from data import WaveletTransform
 
 
 transform = WaveletTransform([2,3,4], 3, 1e-5)
-dataset = LRGBDataset(root = "/cm/shared/khangnn4/WavePE/data", name = "PCQM-Contact")
+dataset = LRGBDataset(root = "C:\Users\r00dn\Wavelet\WaveletPEr00d\Data", name = "image.dat")

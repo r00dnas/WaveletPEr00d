@@ -1,5 +1,32 @@
-import torch
 from torch.utils.data import Dataset, DataLoader
+
+try:
+    from tdc.generation import MolGen
+    from tdc.chem_utils import MolConvert
+except Exception as e:
+    print("TDC disabled:", e)
+    class MolConvert: 
+        def smi2mol(self,x): return x
+        def mol2smi(self,x): return x
+        def smi2img(self,*a,**k): return None
+    class MolGen:
+        def __init__(self,*a,**k): pass
+        def get_data(self,*a,**k): return []
+
+try:
+    from tdc.generation import MolGen
+    from tdc.chem_utils import MolConvert
+except Exception as e:
+    print("TDC disabled:", e)
+    class MolConvert:
+        def smi2mol(self, x): return x
+        def mol2smi(self, x): return x
+        def smi2img(self, *a, **k): return None
+    class MolGen:
+        def __init__(self, *a, **k): pass
+        def get_data(self, *a, **k): return []
+
+from compat import torch_sparse
 from tdc.generation import MolGen
 from tdc.chem_utils import MolConvert
 import pygsp
@@ -75,3 +102,8 @@ class WaveletTransform:
             wavelet_tensors.append(wavelets)
         return torch.stack(wavelet_tensors, dim = -1)
         
+
+
+
+
+

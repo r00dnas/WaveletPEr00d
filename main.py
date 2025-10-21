@@ -63,13 +63,13 @@ callback_list = [
     )
 ]
 
-trainer = Trainer(
-    accelerator = "gpu", 
-    devices = [int(d) for d in config.device_ids.split(",")],
-    max_epochs = config.num_epoch,
-    default_root_dir = config.output_dir, 
-    logger = logger_list, 
-    callbacks = callback_list, 
-)
+
+trainer = Trainer(accelerator="cpu", devices=1, max_epochs=config.num_epoch, default_root_dir=config.output_dir, logger=logger_list, callbacks=callback_list)
+
 
 trainer.fit(model, datamodule, ckpt_path = config.ckpt_path)
+
+
+
+
+

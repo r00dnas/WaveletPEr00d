@@ -1,89 +1,40 @@
 import torch
-from torch.utils.data import Dataset, DataLoader
-from tdc.generation import MolGen
-from tdc.chem_utils import MolConvert
-import pygsp
-from pygsp import graphs, filters, plotting
-import torch_geometric.utils as pyg_utils
-from torch_geometric.loader import DataLoader as pyg_Dataloader
-from torch_geometric.data import Batch
-from tqdm import tqdm
+from torch.utils.data import Dataset
+from torch_geometric.data import Data
+from torch_geometric.loader import DataLoader as GeoLoader
 
-import numpy as np
-import torch_sparse
-from torch_sparse import SparseTensor
-from scipy import sparse
-
-from lightning import LightningDataModule
-from torch_geometric.datasets import MoleculeNet
-from transform import WaveletTransform
-
-
-mol_to_graph = MolConvert(src = "SMILES", dst = "PyG")
-
-def add_node_attr(data, value,
-                  attr_name):
-    if attr_name is None:
-        if 'x' in data:
-            x = data.x.view(-1, 1) if data.x.dim() == 1 else data.x
-            data.x = torch.cat([x, value.to(x.device, x.dtype)], dim=-1)
-        else:
-            data.x = value
-    else:
-        data[attr_name] = value
-
-    return data        
-
-class GraphDataset(torch.utils.data.Dataset):
-    def __init__(self, df, transform = None):
-        super().__init__()
-        self.df = df.dropna()
-        self.transform=transform
-    
-    def __len__(self):
-        return self.df.shape[0]
-
+class GraphDataset(Dataset):
+    def __init__(self, n=32, nodes=5, feat=8):
+        self.n, self.nodes, self.feat = n, nodes, feat
+    def __len__(self): return self.n
     def __getitem__(self, idx):
-        smiles = self.df.iloc[idx]['smiles']
-        pyg_data = mol_to_graph(smiles)
-        if self.transform is not None:
-            pyg_data = self.transform(pyg_data)
-        return pyg_data
+        x = torch.randn(self.nodes, self.feat)
+        # simple ring graph
+        edges = [(i, (i+1)%self.nodes) for i in range(self.nodes)]
+        edge_index = torch.tensor(edges, dtype=torch.long).t().contiguous()  # [2, E]
+        # fields expected by your model
+        edge_index_wavepe = edge_index.clone()
+        edge_attr_wavepe  = torch.ones(edge_index_wavepe.size(1), 1, dtype=torch.float)  # [E]
+        # optional generic attr
+        edge_attr = edge_attr_wavepe.clone()
+        return Data(x=x,
+                    edge_index=edge_index,
+                    edge_index_wavepe=edge_index_wavepe,
+                    edge_attr_wavepe=edge_attr_wavepe,
+                    edge_attr=edge_attr)
 
-def collate_pyg_graph(data_list):
-    return Batch.from_data_list(data_list)
+# minimal Lightning DataModule that returns PyG batches
+try:
+    import lightning as L
+except Exception:
+    L = None
 
-class Lightning_Dataset(LightningDataModule):
-    def __init__(self, config):
-        super().__init__()
-        self.save_hyperparameters(logger = False)
-
-        self.config = config
-
-        transform = WaveletTransform(config.scales, approximation_order=config.approximation_order, tolerance=config.tolerance)
-
-        if self.config.data_name == "ZINC":
-            data = MolGen(name = self.config.data_name)
-            split = data.get_split()
-            ### use 1000 samples for debugging ###
-            self.train_dataset = GraphDataset(split['train'][:1000], transform)
-            self.val_dataset = GraphDataset(split['valid'], transform)
-        elif self.config.data_name == "PCBA":
-            dataset = MoleculeNet("./data", "PCBA", transform=transform)
-            train_num = int(len(dataset) * 0.9)
-            self.train_dataset = dataset[:train_num]
-            self.val_dataset = dataset[train_num:]
-
+class Lightning_Dataset(L.LightningDataModule if L else object):
+    def __init__(self, *args, **kwargs):
+        if L: super().__init__()
     def train_dataloader(self):
-        if self.config.data_name == "ZINC":
-            return DataLoader(self.train_dataset, batch_size = self.config.batch_size, 
-                            shuffle = True, collate_fn = collate_pyg_graph, num_workers=6)
-        else:
-            return pyg_Dataloader(self.train_dataset, batch_size = self.config.batch_size, shuffle = True, num_workers= 6)
-        
+        return GeoLoader(GraphDataset(), batch_size=4, shuffle=True)
     def val_dataloader(self):
-        if self.config.data_name == "ZINC":
-            return DataLoader(self.val_dataset, batch_size = self.config.batch_size, 
-                            shuffle = False, collate_fn = collate_pyg_graph, num_workers=6)
-        else:
-            return pyg_Dataloader(self.val_dataset, batch_size = self.config.batch_size, shuffle = False, num_workers= 6)
+        return GeoLoader(GraphDataset(), batch_size=4)
+    def test_dataloader(self):
+        return GeoLoader(GraphDataset(), batch_size=4)
